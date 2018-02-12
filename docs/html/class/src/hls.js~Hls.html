@@ -34,8 +34,8 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/task-loop.js~TaskLoop.html">TaskLoop</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hlsDefaultConfig">hlsDefaultConfig</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-ErrorTypes">ErrorTypes</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-HlsEvents">HlsEvents</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-ErrorDetail">ErrorDetail</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-HlsEvent">HlsEvent</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#controller">controller</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controller/abr-controller.js~AbrController.html">AbrController</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controller/audio-stream-controller.js~AudioStreamController.html">AudioStreamController</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controller/audio-track-controller.js~AudioTrackController.html">AudioTrackController</a></span></span></li>
@@ -49,6 +49,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controller/subtitle-stream-controller.js~SubtitleStreamController.html">SubtitleStreamController</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controller/subtitle-track-controller.js~SubtitleTrackController.html">SubtitleTrackController</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controller/timeline-controller.js~TimelineController.html">TimelineController</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-State">State</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#crypt">crypt</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/crypt/aes-crypto.js~AESCrypto.html">AESCrypto</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/crypt/aes-decryptor.js~AESDecryptor.html">AESDecryptor</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/crypt/decrypter.js~Decrypter.html">Decrypter</a></span></span></li>
@@ -125,13 +126,13 @@
 </nav>
 
 <div class="content" data-ice="content"><div class="header-notice">
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import Hls from &apos;<span><a href="file/src/hls.js.html#lineNumber33">hls.js/src/hls.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import Hls from &apos;<span><a href="file/src/hls.js.html#lineNumber32">hls.js/src/hls.js</a></span>&apos;</code></pre></div>
   <span data-ice="access">public</span>
   <span data-ice="kind">class</span>
   
   
   
-  <span data-ice="source">| <span><a href="file/src/hls.js.html#lineNumber33">source</a></span></span>
+  <span data-ice="source">| <span><a href="file/src/hls.js.html#lineNumber32">source</a></span></span>
 </div>
 
 <div class="self-detail detail">
@@ -293,7 +294,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/hls.js~Hls.html#static-get-Events">Events</a></span></span><span class="code" data-ice="signature">: <span>HlsEvents</span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/hls.js~Hls.html#static-get-Events">Events</a></span></span><span class="code" data-ice="signature">: <span><a href="variable/index.html#static-variable-HlsEvents">HlsEvents</a></span></span>
         </p>
       </div>
       <div>
@@ -417,35 +418,6 @@
     <td>
       <span class="access" data-ice="access">public</span>
       
-      <span class="kind" data-ice="kind">get</span>
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/hls.js~Hls.html#instance-get-audioTrack">audioTrack</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>index of the selected audio track (index in audio track lists)</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
       <span class="kind" data-ice="kind">set</span>
       
       <span class="override" data-ice="override"></span>
@@ -463,6 +435,35 @@
         
         
         <div data-ice="description"><p>selects an audio track, based on its index in audio track lists</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      <span class="kind" data-ice="kind">get</span>
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/hls.js~Hls.html#instance-get-audioTrack">audioTrack</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>index of the selected audio track (index in audio track lists)</p>
 </div>
       </div>
     </td>
@@ -618,6 +619,83 @@
     <td>
       <span class="access" data-ice="access">public</span>
       
+      <span class="kind" data-ice="kind">set</span>
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/hls.js~Hls.html#instance-set-capLevelToPlayerSize">capLevelToPlayerSize</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      <span class="kind" data-ice="kind">get</span>
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/hls.js~Hls.html#instance-get-capLevelToPlayerSize">capLevelToPlayerSize</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p></p><p>
+  Get/set ABR capping based on the video element&apos;s dimensions.
+</p>
+
+<p></p>
+<p></p><p>
+  If <code>true</code>, the adaptive algorithm will limit levels usable in auto-quality by the HTML video element dimensions (width
+  and height). If dimensions between multiple levels are equal, the cap is chosen as the level with the greatest bandwidth.
+</p>
+
+<p></p>
+<p></p><p>
+  If <code>false</code>, levels will not be limited. All available levels could be used in auto-quality mode taking only bandwidth
+  into consideration.
+</p>
+
+<p></p>
+<p></p><p>
+  The value of this property is initially <code>capLevelToPlayerSize</code> provided via the constructor or, if not provided, the
+  default value (<code>false</code>).
+</p><p></p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
       
       
       <span class="override" data-ice="override"></span>
@@ -674,35 +752,6 @@
     <td>
       <span class="access" data-ice="access">public</span>
       
-      <span class="kind" data-ice="kind">set</span>
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/hls.js~Hls.html#instance-set-currentLevel">currentLevel</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Set quality level index immediately .</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
       <span class="kind" data-ice="kind">get</span>
       
       <span class="override" data-ice="override"></span>
@@ -720,6 +769,35 @@
         
         
         <div data-ice="description"><p>Index of quality level currently played</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      <span class="kind" data-ice="kind">set</span>
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/hls.js~Hls.html#instance-set-currentLevel">currentLevel</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Set quality level index immediately .</p>
 </div>
       </div>
     </td>
@@ -760,6 +838,35 @@
     <td>
       <span class="access" data-ice="access">public</span>
       
+      <span class="kind" data-ice="kind">set</span>
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/hls.js~Hls.html#instance-set-firstLevel">firstLevel</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Sets &quot;first-level&quot;, see getter.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
       <span class="kind" data-ice="kind">get</span>
       
       <span class="override" data-ice="override"></span>
@@ -778,35 +885,6 @@
         
         <div data-ice="description"><p>Return &quot;first level&quot;: like a default level, if not set,
 falls back to index of first level referenced in manifest</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      <span class="kind" data-ice="kind">set</span>
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/hls.js~Hls.html#instance-set-firstLevel">firstLevel</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Sets &quot;first-level&quot;, see getter.</p>
 </div>
       </div>
     </td>
@@ -875,35 +953,6 @@ falls back to index of first level referenced in manifest</p>
     <td>
       <span class="access" data-ice="access">public</span>
       
-      <span class="kind" data-ice="kind">set</span>
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/hls.js~Hls.html#instance-set-loadLevel">loadLevel</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Set quality level index for next loaded data in a conservative way.</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
       <span class="kind" data-ice="kind">get</span>
       
       <span class="override" data-ice="override"></span>
@@ -921,6 +970,35 @@ falls back to index of first level referenced in manifest</p>
         
         
         <div data-ice="description"><p>Return the quality level of the currently or last (of none is loaded currently) segment</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      <span class="kind" data-ice="kind">set</span>
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/hls.js~Hls.html#instance-set-loadLevel">loadLevel</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Set quality level index for next loaded data in a conservative way.</p>
 </div>
       </div>
     </td>
@@ -1306,38 +1384,6 @@ falls back to index of first level referenced in manifest</p>
     <td>
       <span class="access" data-ice="access">public</span>
       
-      <span class="kind" data-ice="kind">set</span>
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/hls.js~Hls.html#instance-set-startLevel">startLevel</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>set  start level (level of first fragment that will be played back)
-if not overrided by user, first level appearing in manifest will be used as start level
-if -1 : automatic start level selection, playback will start from level matching download bandwidth
-(determined from download of first segment)</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
       <span class="kind" data-ice="kind">get</span>
       
       <span class="override" data-ice="override"></span>
@@ -1355,6 +1401,38 @@ if -1 : automatic start level selection, playback will start from level matching
         
         
         <div data-ice="description"><p>Return start level (level of first fragment that will be played back)
+if not overrided by user, first level appearing in manifest will be used as start level
+if -1 : automatic start level selection, playback will start from level matching download bandwidth
+(determined from download of first segment)</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      <span class="kind" data-ice="kind">set</span>
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/hls.js~Hls.html#instance-set-startLevel">startLevel</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>set  start level (level of first fragment that will be played back)
 if not overrided by user, first level appearing in manifest will be used as start level
 if -1 : automatic start level selection, playback will start from level matching download bandwidth
 (determined from download of first segment)</p>
@@ -1889,7 +1967,7 @@ as one call (convenience method).</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber73">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber72">source</a></span></span>
     </span>
   </h3>
 
@@ -1932,7 +2010,7 @@ as one call (convenience method).</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber83">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber82">source</a></span></span>
     </span>
   </h3>
 
@@ -1975,7 +2053,7 @@ as one call (convenience method).</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber66">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber65">source</a></span></span>
     </span>
   </h3>
 
@@ -2018,7 +2096,7 @@ as one call (convenience method).</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber59">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber58">source</a></span></span>
     </span>
   </h3>
 
@@ -2057,11 +2135,11 @@ as one call (convenience method).</p>
     
     
     
-    <span class="code" data-ice="name">Events</span><span class="code" data-ice="signature">: <span>HlsEvents</span></span>
+    <span class="code" data-ice="name">Events</span><span class="code" data-ice="signature">: <span><a href="variable/index.html#static-variable-HlsEvents">HlsEvents</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber52">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber51">source</a></span></span>
     </span>
   </h3>
 
@@ -2104,7 +2182,7 @@ as one call (convenience method).</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber38">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber37">source</a></span></span>
     </span>
   </h3>
 
@@ -2150,7 +2228,7 @@ as one call (convenience method).</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber45">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber44">source</a></span></span>
     </span>
   </h3>
 
@@ -2208,7 +2286,7 @@ as one call (convenience method).</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber93">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber92">source</a></span></span>
     </span>
   </h3>
 
@@ -2260,10 +2338,10 @@ as one call (convenience method).</p>
 <div data-ice="memberDetails"><h2 data-ice="title">Public Members</h2>
 
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-get-audioTrack">
+  <h3 data-ice="anchor" id="instance-set-audioTrack">
     <span class="access" data-ice="access">public</span>
     
-    <span class="kind" data-ice="kind">get</span>
+    <span class="kind" data-ice="kind">set</span>
     
     
     
@@ -2271,14 +2349,14 @@ as one call (convenience method).</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber552">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber560">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  <div data-ice="description"><p>index of the selected audio track (index in audio track lists)</p>
+  <div data-ice="description"><p>selects an audio track, based on its index in audio track lists</p>
 </div>
 
   
@@ -2304,10 +2382,10 @@ as one call (convenience method).</p>
   
 </div>
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-set-audioTrack">
+  <h3 data-ice="anchor" id="instance-get-audioTrack">
     <span class="access" data-ice="access">public</span>
     
-    <span class="kind" data-ice="kind">set</span>
+    <span class="kind" data-ice="kind">get</span>
     
     
     
@@ -2315,14 +2393,14 @@ as one call (convenience method).</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber561">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber551">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  <div data-ice="description"><p>selects an audio track, based on its index in audio track lists</p>
+  <div data-ice="description"><p>index of the selected audio track (index in audio track lists)</p>
 </div>
 
   
@@ -2359,7 +2437,7 @@ as one call (convenience method).</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber198">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber197">source</a></span></span>
     </span>
   </h3>
 
@@ -2402,7 +2480,7 @@ as one call (convenience method).</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber543">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber542">source</a></span></span>
     </span>
   </h3>
 
@@ -2445,7 +2523,7 @@ as one call (convenience method).</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber463">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber462">source</a></span></span>
     </span>
   </h3>
 
@@ -2489,7 +2567,7 @@ as one call (convenience method).</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber455">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber454">source</a></span></span>
     </span>
   </h3>
 
@@ -2533,7 +2611,7 @@ as one call (convenience method).</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber472">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber471">source</a></span></span>
     </span>
   </h3>
 
@@ -2541,6 +2619,113 @@ as one call (convenience method).</p>
   
   
   <div data-ice="description"><p>True when automatic level selection enabled</p>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-set-capLevelToPlayerSize">
+    <span class="access" data-ice="access">public</span>
+    
+    <span class="kind" data-ice="kind">set</span>
+    
+    
+    
+    <span class="code" data-ice="name">capLevelToPlayerSize</span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber651">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-get-capLevelToPlayerSize">
+    <span class="access" data-ice="access">public</span>
+    
+    <span class="kind" data-ice="kind">get</span>
+    
+    
+    
+    <span class="code" data-ice="name">capLevelToPlayerSize</span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber644">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p></p><p>
+  Get/set ABR capping based on the video element&apos;s dimensions.
+</p>
+
+<p></p>
+<p></p><p>
+  If <code>true</code>, the adaptive algorithm will limit levels usable in auto-quality by the HTML video element dimensions (width
+  and height). If dimensions between multiple levels are equal, the cap is chosen as the level with the greatest bandwidth.
+</p>
+
+<p></p>
+<p></p><p>
+  If <code>false</code>, levels will not be limited. All available levels could be used in auto-quality mode taking only bandwidth
+  into consideration.
+</p>
+
+<p></p>
+<p></p><p>
+  The value of this property is initially <code>capLevelToPlayerSize</code> provided via the constructor or, if not provided, the
+  default value (<code>false</code>).
+</p><p></p>
 </div>
 
   
@@ -2577,7 +2762,7 @@ as one call (convenience method).</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber114">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber113">source</a></span></span>
     </span>
   </h3>
 
@@ -2620,7 +2805,7 @@ as one call (convenience method).</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber234">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber233">source</a></span></span>
     </span>
   </h3>
 
@@ -2628,52 +2813,6 @@ as one call (convenience method).</p>
   
   
   
-
-  
-
-  <div data-ice="properties">
-</div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-set-currentLevel">
-    <span class="access" data-ice="access">public</span>
-    
-    <span class="kind" data-ice="kind">set</span>
-    
-    
-    
-    <span class="code" data-ice="name">currentLevel</span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber343">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>Set quality level index immediately .
-This will flush the current buffer to replace the quality asap.
-That means playback will interrupt at least shortly to re-buffer and re-sync eventually.</p>
-</div>
 
   
 
@@ -2709,7 +2848,7 @@ That means playback will interrupt at least shortly to re-buffer and re-sync eve
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber333">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber332">source</a></span></span>
     </span>
   </h3>
 
@@ -2717,6 +2856,52 @@ That means playback will interrupt at least shortly to re-buffer and re-sync eve
   
   
   <div data-ice="description"><p>Index of quality level currently played</p>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-set-currentLevel">
+    <span class="access" data-ice="access">public</span>
+    
+    <span class="kind" data-ice="kind">set</span>
+    
+    
+    
+    <span class="code" data-ice="name">currentLevel</span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber342">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Set quality level index immediately .
+This will flush the current buffer to replace the quality asap.
+That means playback will interrupt at least shortly to re-buffer and re-sync eventually.</p>
 </div>
 
   
@@ -2753,7 +2938,7 @@ That means playback will interrupt at least shortly to re-buffer and re-sync eve
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber220">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber219">source</a></span></span>
     </span>
   </h3>
 
@@ -2761,51 +2946,6 @@ That means playback will interrupt at least shortly to re-buffer and re-sync eve
   
   
   
-
-  
-
-  <div data-ice="properties">
-</div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-get-firstLevel">
-    <span class="access" data-ice="access">public</span>
-    
-    <span class="kind" data-ice="kind">get</span>
-    
-    
-    
-    <span class="code" data-ice="name">firstLevel</span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber410">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>Return &quot;first level&quot;: like a default level, if not set,
-falls back to index of first level referenced in manifest</p>
-</div>
 
   
 
@@ -2841,7 +2981,7 @@ falls back to index of first level referenced in manifest</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber418">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber417">source</a></span></span>
     </span>
   </h3>
 
@@ -2849,6 +2989,51 @@ falls back to index of first level referenced in manifest</p>
   
   
   <div data-ice="description"><p>Sets &quot;first-level&quot;, see getter.</p>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-get-firstLevel">
+    <span class="access" data-ice="access">public</span>
+    
+    <span class="kind" data-ice="kind">get</span>
+    
+    
+    
+    <span class="code" data-ice="name">firstLevel</span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber409">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Return &quot;first level&quot;: like a default level, if not set,
+falls back to index of first level referenced in manifest</p>
 </div>
 
   
@@ -2885,7 +3070,7 @@ falls back to index of first level referenced in manifest</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber325">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber324">source</a></span></span>
     </span>
   </h3>
 
@@ -2928,7 +3113,7 @@ falls back to index of first level referenced in manifest</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber571">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber570">source</a></span></span>
     </span>
   </h3>
 
@@ -2936,52 +3121,6 @@ falls back to index of first level referenced in manifest</p>
   
   
   
-
-  
-
-  <div data-ice="properties">
-</div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-set-loadLevel">
-    <span class="access" data-ice="access">public</span>
-    
-    <span class="kind" data-ice="kind">set</span>
-    
-    
-    
-    <span class="code" data-ice="name">loadLevel</span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber383">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>Set quality level index for next loaded data in a conservative way.
-This will switch the quality without flushing, but interrupt current loading.
-Thus the moment when the quality switch will appear in effect will only be after the already existing buffer.</p>
-</div>
 
   
 
@@ -3017,7 +3156,7 @@ Thus the moment when the quality switch will appear in effect will only be after
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber373">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber372">source</a></span></span>
     </span>
   </h3>
 
@@ -3025,6 +3164,52 @@ Thus the moment when the quality switch will appear in effect will only be after
   
   
   <div data-ice="description"><p>Return the quality level of the currently or last (of none is loaded currently) segment</p>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-set-loadLevel">
+    <span class="access" data-ice="access">public</span>
+    
+    <span class="kind" data-ice="kind">set</span>
+    
+    
+    
+    <span class="code" data-ice="name">loadLevel</span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber382">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Set quality level index for next loaded data in a conservative way.
+This will switch the quality without flushing, but interrupt current loading.
+Thus the moment when the quality switch will appear in effect will only be after the already existing buffer.</p>
 </div>
 
   
@@ -3061,7 +3246,7 @@ Thus the moment when the quality switch will appear in effect will only be after
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber481">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber480">source</a></span></span>
     </span>
   </h3>
 
@@ -3105,7 +3290,7 @@ Thus the moment when the quality switch will appear in effect will only be after
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber504">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber503">source</a></span></span>
     </span>
   </h3>
 
@@ -3149,7 +3334,7 @@ Thus the moment when the quality switch will appear in effect will only be after
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber256">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber255">source</a></span></span>
     </span>
   </h3>
 
@@ -3192,7 +3377,7 @@ Thus the moment when the quality switch will appear in effect will only be after
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber489">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber488">source</a></span></span>
     </span>
   </h3>
 
@@ -3236,7 +3421,7 @@ Thus the moment when the quality switch will appear in effect will only be after
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber173">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber172">source</a></span></span>
     </span>
   </h3>
 
@@ -3279,7 +3464,7 @@ Thus the moment when the quality switch will appear in effect will only be after
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber521">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber520">source</a></span></span>
     </span>
   </h3>
 
@@ -3323,7 +3508,7 @@ Thus the moment when the quality switch will appear in effect will only be after
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber535">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber534">source</a></span></span>
     </span>
   </h3>
 
@@ -3371,7 +3556,7 @@ this value will be resetted to -1 by ABR controller.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber353">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber352">source</a></span></span>
     </span>
   </h3>
 
@@ -3415,7 +3600,7 @@ this value will be resetted to -1 by ABR controller.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber363">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber362">source</a></span></span>
     </span>
   </h3>
 
@@ -3461,7 +3646,7 @@ May abort current loading of data, and flush parts of buffer (outside currently 
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber401">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber400">source</a></span></span>
     </span>
   </h3>
 
@@ -3506,7 +3691,7 @@ Same as <code>loadLevel</code> but will wait for next switch (until current load
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber392">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber391">source</a></span></span>
     </span>
   </h3>
 
@@ -3550,7 +3735,7 @@ Same as <code>loadLevel</code> but will wait for next switch (until current load
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber126">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber125">source</a></span></span>
     </span>
   </h3>
 
@@ -3593,7 +3778,7 @@ Same as <code>loadLevel</code> but will wait for next switch (until current load
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber125">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber124">source</a></span></span>
     </span>
   </h3>
 
@@ -3601,53 +3786,6 @@ Same as <code>loadLevel</code> but will wait for next switch (until current load
   
   
   
-
-  
-
-  <div data-ice="properties">
-</div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-set-startLevel">
-    <span class="access" data-ice="access">public</span>
-    
-    <span class="kind" data-ice="kind">set</span>
-    
-    
-    
-    <span class="code" data-ice="name">startLevel</span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber441">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>set  start level (level of first fragment that will be played back)
-if not overrided by user, first level appearing in manifest will be used as start level
-if -1 : automatic start level selection, playback will start from level matching download bandwidth
-(determined from download of first segment)</p>
-</div>
 
   
 
@@ -3683,7 +3821,7 @@ if -1 : automatic start level selection, playback will start from level matching
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber430">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber429">source</a></span></span>
     </span>
   </h3>
 
@@ -3691,6 +3829,53 @@ if -1 : automatic start level selection, playback will start from level matching
   
   
   <div data-ice="description"><p>Return start level (level of first fragment that will be played back)
+if not overrided by user, first level appearing in manifest will be used as start level
+if -1 : automatic start level selection, playback will start from level matching download bandwidth
+(determined from download of first segment)</p>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-set-startLevel">
+    <span class="access" data-ice="access">public</span>
+    
+    <span class="kind" data-ice="kind">set</span>
+    
+    
+    
+    <span class="code" data-ice="name">startLevel</span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber440">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>set  start level (level of first fragment that will be played back)
 if not overrided by user, first level appearing in manifest will be used as start level
 if -1 : automatic start level selection, playback will start from level matching download bandwidth
 (determined from download of first segment)</p>
@@ -3730,7 +3915,7 @@ if -1 : automatic start level selection, playback will start from level matching
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber607">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber606">source</a></span></span>
     </span>
   </h3>
 
@@ -3773,7 +3958,7 @@ if -1 : automatic start level selection, playback will start from level matching
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber616">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber615">source</a></span></span>
     </span>
   </h3>
 
@@ -3817,7 +4002,7 @@ if -1 : automatic start level selection, playback will start from level matching
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber588">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber587">source</a></span></span>
     </span>
   </h3>
 
@@ -3861,7 +4046,7 @@ if -1 : automatic start level selection, playback will start from level matching
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber597">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber596">source</a></span></span>
     </span>
   </h3>
 
@@ -3906,7 +4091,7 @@ if -1 : automatic start level selection, playback will start from level matching
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber209">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber208">source</a></span></span>
     </span>
   </h3>
 
@@ -3949,7 +4134,7 @@ if -1 : automatic start level selection, playback will start from level matching
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber579">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber578">source</a></span></span>
     </span>
   </h3>
 
@@ -3993,7 +4178,7 @@ if -1 : automatic start level selection, playback will start from level matching
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber127">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber126">source</a></span></span>
     </span>
   </h3>
 
@@ -4036,7 +4221,7 @@ if -1 : automatic start level selection, playback will start from level matching
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber245">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber244">source</a></span></span>
     </span>
   </h3>
 
@@ -4081,7 +4266,7 @@ if -1 : automatic start level selection, playback will start from level matching
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber115">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber114">source</a></span></span>
     </span>
   </h3>
 
@@ -4127,7 +4312,7 @@ if -1 : automatic start level selection, playback will start from level matching
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber254">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber253">source</a></span></span>
     </span>
   </h3>
 
@@ -4187,7 +4372,7 @@ if -1 : automatic start level selection, playback will start from level matching
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber240">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber239">source</a></span></span>
     </span>
   </h3>
 
@@ -4231,7 +4416,7 @@ if -1 : automatic start level selection, playback will start from level matching
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber263">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber262">source</a></span></span>
     </span>
   </h3>
 
@@ -4275,7 +4460,7 @@ if -1 : automatic start level selection, playback will start from level matching
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber273">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber272">source</a></span></span>
     </span>
   </h3>
 
@@ -4335,7 +4520,7 @@ if -1 : automatic start level selection, playback will start from level matching
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber315">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber314">source</a></span></span>
     </span>
   </h3>
 
@@ -4381,7 +4566,7 @@ as one call (convenience method).</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber288">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber287">source</a></span></span>
     </span>
   </h3>
 
@@ -4443,7 +4628,7 @@ Depending on default config, client starts loading automatically when a source i
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber296">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber295">source</a></span></span>
     </span>
   </h3>
 
@@ -4487,7 +4672,7 @@ Depending on default config, client starts loading automatically when a source i
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber304">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/hls.js.html#lineNumber303">source</a></span></span>
     </span>
   </h3>
 

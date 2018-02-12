@@ -34,8 +34,8 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/task-loop.js~TaskLoop.html">TaskLoop</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hlsDefaultConfig">hlsDefaultConfig</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-ErrorTypes">ErrorTypes</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-HlsEvents">HlsEvents</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-ErrorDetail">ErrorDetail</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-HlsEvent">HlsEvent</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#controller">controller</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controller/abr-controller.js~AbrController.html">AbrController</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controller/audio-stream-controller.js~AudioStreamController.html">AudioStreamController</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controller/audio-track-controller.js~AudioTrackController.html">AudioTrackController</a></span></span></li>
@@ -49,6 +49,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controller/subtitle-stream-controller.js~SubtitleStreamController.html">SubtitleStreamController</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controller/subtitle-track-controller.js~SubtitleTrackController.html">SubtitleTrackController</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controller/timeline-controller.js~TimelineController.html">TimelineController</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-State">State</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#crypt">crypt</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/crypt/aes-crypto.js~AESCrypto.html">AESCrypto</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/crypt/aes-decryptor.js~AESDecryptor.html">AESDecryptor</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/crypt/decrypter.js~Decrypter.html">Decrypter</a></span></span></li>
@@ -142,7 +143,7 @@ import {logger} from &apos;../utils/logger&apos;;
 import { alignDiscontinuities } from &apos;../utils/discontinuities&apos;;
 import TaskLoop from &apos;../task-loop&apos;;
 
-const State = {
+export const State = {
   STOPPED : &apos;STOPPED&apos;,
   IDLE : &apos;IDLE&apos;,
   KEY_LOADING : &apos;KEY_LOADING&apos;,
@@ -241,6 +242,7 @@ class StreamController extends TaskLoop {
       this.demuxer.destroy();
       this.demuxer = null;
     }
+    this.clearInterval();
     this.state = State.STOPPED;
     this.forceStartLoad = false;
   }
@@ -475,24 +477,29 @@ class StreamController extends TaskLoop {
          even if SN are not synchronized between playlists, loading this frag will help us
          compute playlist sliding and find the right one after in case it was not the right consecutive one */
       if (fragPrevious) {
-        const targetSN = fragPrevious.sn + 1;
-        if (targetSN &gt;= levelDetails.startSN &amp;&amp; targetSN &lt;= levelDetails.endSN) {
-          const fragNext = fragments[targetSN - levelDetails.startSN];
-          if (fragPrevious.cc === fragNext.cc) {
-            frag = fragNext;
-            logger.log(`live playlist, switching playlist, load frag with next SN: ${frag.sn}`);
-          }
-        }
-        // next frag SN not available (or not with same continuity counter)
-        // look for a frag sharing the same CC
-        if (!frag) {
-          frag = BinarySearch.search(fragments, function(frag) {
-            return fragPrevious.cc - frag.cc;
-          });
-          if (frag) {
-            logger.log(`live playlist, switching playlist, load frag with same CC: ${frag.sn}`);
-          }
-        }
+
+		if (!levelDetails.programDateTime) {//Uses buffer and sequence number to calculate switch segment (required if using EXT-X-DISCONTINUITY-SEQUENCE)
+			const targetSN = fragPrevious.sn + 1;
+			if (targetSN &gt;= levelDetails.startSN &amp;&amp; targetSN &lt;= levelDetails.endSN) {
+			  const fragNext = fragments[targetSN - levelDetails.startSN];
+			  if (fragPrevious.cc === fragNext.cc) {
+          frag = fragNext;
+          logger.log(`live playlist, switching playlist, load frag with next SN: ${frag.sn}`);
+			  }
+			}
+			// next frag SN not available (or not with same continuity counter)
+			// look for a frag sharing the same CC
+			if (!frag) {
+			  frag = BinarySearch.search(fragments, function(frag) {
+          return fragPrevious.cc - frag.cc;
+			  });
+			  if (frag) {
+          logger.log(`live playlist, switching playlist, load frag with same CC: ${frag.sn}`);
+			  }
+			}
+		} else {//Relies on PDT in order to switch bitrates (Support EXT-X-DISCONTINUITY without EXT-X-DISCONTINUITY-SEQUENCE)
+			frag = this._findFragmentByPDT(fragments, fragPrevious.endPdt + 1);
+		}
       }
       if (!frag) {
         /* we have no idea about which fragment should be loaded.
@@ -505,9 +512,33 @@ class StreamController extends TaskLoop {
     return frag;
   }
 
-  _findFragment(start, fragPrevious, fragLen, fragments, bufferEnd, end, levelDetails) {
+  _findFragmentByPDT(fragments, PDTValue){
+
+    if(!fragments || PDTValue === undefined){
+      return null;
+    }
+
+    //if less than start
+    let firstSegment = fragments[0];
+
+    if(PDTValue &lt; firstSegment.pdt){
+      return null;
+    }
+
+    let lastSegment = fragments[fragments.length - 1];
+
+    if(PDTValue &gt;= lastSegment.endPdt){
+      return null;
+    }
+
+    return BinarySearch.search(fragments, function(frag) {
+      return PDTValue &lt; frag.pdt ? -1 : PDTValue &gt;= frag.endPdt ? 1 : 0;
+    });
+  }
+
+
+  _findFragmentBySN(fragPrevious, fragments, bufferEnd, end) {
     const config = this.hls.config;
-    let frag;
     let foundFrag;
     let maxFragLookUpTolerance = config.maxFragLookUpTolerance;
     const fragNext = fragPrevious ? fragments[fragPrevious.sn - fragments[0].sn + 1] : undefined;
@@ -546,6 +577,22 @@ class StreamController extends TaskLoop {
       } else {
         foundFrag = BinarySearch.search(fragments, fragmentWithinToleranceTest);
       }
+	}
+	return foundFrag;
+  }
+
+  _findFragment(start, fragPrevious, fragLen, fragments, bufferEnd, end, levelDetails) {
+    const config = this.hls.config;
+    let frag;
+    let foundFrag;
+
+    if (bufferEnd &lt; end) {
+      if (!levelDetails.programDateTime) {//Uses buffer and sequence number to calculate switch segment (required if using EXT-X-DISCONTINUITY-SEQUENCE)
+        foundFrag = this._findFragmentBySN(fragPrevious, fragments, bufferEnd, end);
+      } else {//Relies on PDT in order to switch bitrates (Support EXT-X-DISCONTINUITY without EXT-X-DISCONTINUITY-SEQUENCE)
+        foundFrag = this._findFragmentByPDT(fragments, fragPrevious ? fragPrevious.endPdt + 1 : bufferEnd + (levelDetails.programDateTime ? Date.parse(levelDetails.programDateTime) : 0));
+      }
+
     } else {
       // reach end of playlist
       foundFrag = fragments[fragLen-1];
@@ -1524,7 +1571,7 @@ _checkBuffer() {
       } else if (this.immediateSwitch) {
         this.immediateLevelSwitchEnd();
       } else {
-        let bufferInfo = BufferHelper.bufferInfo(media,currentTime,0),
+        let bufferInfo = BufferHelper.bufferInfo(media,currentTime,config.maxBufferHole),
             expectedPlaying = !(media.paused || // not playing when media is paused
                                 media.ended  || // not playing when media is ended
                                 media.buffered.length === 0), // not playing if nothing buffered

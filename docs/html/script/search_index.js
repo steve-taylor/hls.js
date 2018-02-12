@@ -198,6 +198,12 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "hls.js/src/events.js~hlsevents",
+    "variable/index.html#static-variable-HlsEvents",
+    "<span>HlsEvents</span> <span class=\"search-result-import-path\">hls.js/src/events.js</span>",
+    "variable"
+  ],
+  [
     "hls.js/src/demux/id3.js~id3",
     "class/src/demux/id3.js~ID3.html",
     "<span>ID3</span> <span class=\"search-result-import-path\">hls.js/src/demux/id3.js</span>",
@@ -286,6 +292,12 @@ window.esdocSearchIndex = [
     "class/src/demux/sample-aes.js~SampleAesDecrypter.html",
     "<span>SampleAesDecrypter</span> <span class=\"search-result-import-path\">hls.js/src/demux/sample-aes.js</span>",
     "class"
+  ],
+  [
+    "hls.js/src/controller/stream-controller.js~state",
+    "variable/index.html#static-variable-State",
+    "<span>State</span> <span class=\"search-result-import-path\">hls.js/src/controller/stream-controller.js</span>",
+    "variable"
   ],
   [
     "hls.js/src/controller/stream-controller.js~streamcontroller",
@@ -1716,15 +1728,45 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/controller/cap-level-controller.js~caplevelcontroller#_capleveltoplayersize",
+    "class/src/controller/cap-level-controller.js~CapLevelController.html#instance-member-_capLevelToPlayerSize",
+    "src/controller/cap-level-controller.js~CapLevelController#_capLevelToPlayerSize",
+    "member"
+  ],
+  [
+    "src/controller/cap-level-controller.js~caplevelcontroller#activate",
+    "class/src/controller/cap-level-controller.js~CapLevelController.html#instance-method-activate",
+    "src/controller/cap-level-controller.js~CapLevelController#activate",
+    "method"
+  ],
+  [
     "src/controller/cap-level-controller.js~caplevelcontroller#autolevelcapping",
     "class/src/controller/cap-level-controller.js~CapLevelController.html#instance-member-autoLevelCapping",
     "src/controller/cap-level-controller.js~CapLevelController#autoLevelCapping",
     "member"
   ],
   [
+    "src/controller/cap-level-controller.js~caplevelcontroller#capleveltoplayersize",
+    "class/src/controller/cap-level-controller.js~CapLevelController.html#instance-set-capLevelToPlayerSize",
+    "src/controller/cap-level-controller.js~CapLevelController#capLevelToPlayerSize",
+    "member"
+  ],
+  [
+    "src/controller/cap-level-controller.js~caplevelcontroller#capleveltoplayersize",
+    "class/src/controller/cap-level-controller.js~CapLevelController.html#instance-get-capLevelToPlayerSize",
+    "src/controller/cap-level-controller.js~CapLevelController#capLevelToPlayerSize",
+    "member"
+  ],
+  [
     "src/controller/cap-level-controller.js~caplevelcontroller#constructor",
     "class/src/controller/cap-level-controller.js~CapLevelController.html#instance-constructor-constructor",
     "src/controller/cap-level-controller.js~CapLevelController#constructor",
+    "method"
+  ],
+  [
+    "src/controller/cap-level-controller.js~caplevelcontroller#deactivate",
+    "class/src/controller/cap-level-controller.js~CapLevelController.html#instance-method-deactivate",
+    "src/controller/cap-level-controller.js~CapLevelController#deactivate",
     "method"
   ],
   [
@@ -1749,6 +1791,12 @@ window.esdocSearchIndex = [
     "src/controller/cap-level-controller.js~caplevelcontroller#levels",
     "class/src/controller/cap-level-controller.js~CapLevelController.html#instance-member-levels",
     "src/controller/cap-level-controller.js~CapLevelController#levels",
+    "member"
+  ],
+  [
+    "src/controller/cap-level-controller.js~caplevelcontroller#manifest",
+    "class/src/controller/cap-level-controller.js~CapLevelController.html#instance-member-manifest",
+    "src/controller/cap-level-controller.js~CapLevelController#manifest",
     "member"
   ],
   [
@@ -1785,6 +1833,12 @@ window.esdocSearchIndex = [
     "src/controller/cap-level-controller.js~caplevelcontroller#onmediaattaching",
     "class/src/controller/cap-level-controller.js~CapLevelController.html#instance-method-onMediaAttaching",
     "src/controller/cap-level-controller.js~CapLevelController#onMediaAttaching",
+    "method"
+  ],
+  [
+    "src/controller/cap-level-controller.js~caplevelcontroller#onmediadetaching",
+    "class/src/controller/cap-level-controller.js~CapLevelController.html#instance-method-onMediaDetaching",
+    "src/controller/cap-level-controller.js~CapLevelController#onMediaDetaching",
     "method"
   ],
   [
@@ -2155,25 +2209,25 @@ window.esdocSearchIndex = [
   ],
   [
     "src/controller/level-controller.js~levelcontroller#firstlevel",
-    "class/src/controller/level-controller.js~LevelController.html#instance-get-firstLevel",
-    "src/controller/level-controller.js~LevelController#firstLevel",
-    "member"
-  ],
-  [
-    "src/controller/level-controller.js~levelcontroller#firstlevel",
     "class/src/controller/level-controller.js~LevelController.html#instance-set-firstLevel",
     "src/controller/level-controller.js~LevelController#firstLevel",
     "member"
   ],
   [
-    "src/controller/level-controller.js~levelcontroller#level",
-    "class/src/controller/level-controller.js~LevelController.html#instance-get-level",
-    "src/controller/level-controller.js~LevelController#level",
+    "src/controller/level-controller.js~levelcontroller#firstlevel",
+    "class/src/controller/level-controller.js~LevelController.html#instance-get-firstLevel",
+    "src/controller/level-controller.js~LevelController#firstLevel",
     "member"
   ],
   [
     "src/controller/level-controller.js~levelcontroller#level",
     "class/src/controller/level-controller.js~LevelController.html#instance-set-level",
+    "src/controller/level-controller.js~LevelController#level",
+    "member"
+  ],
+  [
+    "src/controller/level-controller.js~levelcontroller#level",
+    "class/src/controller/level-controller.js~LevelController.html#instance-get-level",
     "src/controller/level-controller.js~LevelController#level",
     "member"
   ],
@@ -2215,13 +2269,13 @@ window.esdocSearchIndex = [
   ],
   [
     "src/controller/level-controller.js~levelcontroller#nextloadlevel",
-    "class/src/controller/level-controller.js~LevelController.html#instance-get-nextLoadLevel",
+    "class/src/controller/level-controller.js~LevelController.html#instance-set-nextLoadLevel",
     "src/controller/level-controller.js~LevelController#nextLoadLevel",
     "member"
   ],
   [
     "src/controller/level-controller.js~levelcontroller#nextloadlevel",
-    "class/src/controller/level-controller.js~LevelController.html#instance-set-nextLoadLevel",
+    "class/src/controller/level-controller.js~LevelController.html#instance-get-nextLoadLevel",
     "src/controller/level-controller.js~LevelController#nextLoadLevel",
     "member"
   ],
@@ -2269,13 +2323,13 @@ window.esdocSearchIndex = [
   ],
   [
     "src/controller/level-controller.js~levelcontroller#startlevel",
-    "class/src/controller/level-controller.js~LevelController.html#instance-set-startLevel",
+    "class/src/controller/level-controller.js~LevelController.html#instance-get-startLevel",
     "src/controller/level-controller.js~LevelController#startLevel",
     "member"
   ],
   [
     "src/controller/level-controller.js~levelcontroller#startlevel",
-    "class/src/controller/level-controller.js~LevelController.html#instance-get-startLevel",
+    "class/src/controller/level-controller.js~LevelController.html#instance-set-startLevel",
     "src/controller/level-controller.js~LevelController#startLevel",
     "member"
   ],
@@ -2349,6 +2403,18 @@ window.esdocSearchIndex = [
     "src/controller/stream-controller.js~streamcontroller#_findfragment",
     "class/src/controller/stream-controller.js~StreamController.html#instance-method-_findFragment",
     "src/controller/stream-controller.js~StreamController#_findFragment",
+    "method"
+  ],
+  [
+    "src/controller/stream-controller.js~streamcontroller#_findfragmentbypdt",
+    "class/src/controller/stream-controller.js~StreamController.html#instance-method-_findFragmentByPDT",
+    "src/controller/stream-controller.js~StreamController#_findFragmentByPDT",
+    "method"
+  ],
+  [
+    "src/controller/stream-controller.js~streamcontroller#_findfragmentbysn",
+    "class/src/controller/stream-controller.js~StreamController.html#instance-method-_findFragmentBySN",
+    "src/controller/stream-controller.js~StreamController#_findFragmentBySN",
     "method"
   ],
   [
@@ -2545,13 +2611,13 @@ window.esdocSearchIndex = [
   ],
   [
     "src/controller/stream-controller.js~streamcontroller#livesyncposition",
-    "class/src/controller/stream-controller.js~StreamController.html#instance-set-liveSyncPosition",
+    "class/src/controller/stream-controller.js~StreamController.html#instance-get-liveSyncPosition",
     "src/controller/stream-controller.js~StreamController#liveSyncPosition",
     "member"
   ],
   [
     "src/controller/stream-controller.js~streamcontroller#livesyncposition",
-    "class/src/controller/stream-controller.js~StreamController.html#instance-get-liveSyncPosition",
+    "class/src/controller/stream-controller.js~StreamController.html#instance-set-liveSyncPosition",
     "src/controller/stream-controller.js~StreamController#liveSyncPosition",
     "member"
   ],
@@ -2803,13 +2869,13 @@ window.esdocSearchIndex = [
   ],
   [
     "src/controller/stream-controller.js~streamcontroller#state",
-    "class/src/controller/stream-controller.js~StreamController.html#instance-set-state",
+    "class/src/controller/stream-controller.js~StreamController.html#instance-get-state",
     "src/controller/stream-controller.js~StreamController#state",
     "member"
   ],
   [
     "src/controller/stream-controller.js~streamcontroller#state",
-    "class/src/controller/stream-controller.js~StreamController.html#instance-get-state",
+    "class/src/controller/stream-controller.js~StreamController.html#instance-set-state",
     "src/controller/stream-controller.js~StreamController#state",
     "member"
   ],
@@ -3067,13 +3133,13 @@ window.esdocSearchIndex = [
   ],
   [
     "src/controller/subtitle-track-controller.js~subtitletrackcontroller#subtitletrack",
-    "class/src/controller/subtitle-track-controller.js~SubtitleTrackController.html#instance-get-subtitleTrack",
+    "class/src/controller/subtitle-track-controller.js~SubtitleTrackController.html#instance-set-subtitleTrack",
     "src/controller/subtitle-track-controller.js~SubtitleTrackController#subtitleTrack",
     "member"
   ],
   [
     "src/controller/subtitle-track-controller.js~subtitletrackcontroller#subtitletrack",
-    "class/src/controller/subtitle-track-controller.js~SubtitleTrackController.html#instance-set-subtitleTrack",
+    "class/src/controller/subtitle-track-controller.js~SubtitleTrackController.html#instance-get-subtitleTrack",
     "src/controller/subtitle-track-controller.js~SubtitleTrackController#subtitleTrack",
     "member"
   ],
@@ -4644,12 +4710,6 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/events.js~hlsevent",
-    "typedef/index.html#static-typedef-HlsEvent",
-    "src/events.js~HlsEvent",
-    "typedef"
-  ],
-  [
     "src/helper/aac.js",
     "file/src/helper/aac.js.html",
     "src/helper/aac.js",
@@ -4866,6 +4926,18 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
+    "src/hls.js~hls#capleveltoplayersize",
+    "class/src/hls.js~Hls.html#instance-set-capLevelToPlayerSize",
+    "src/hls.js~Hls#capLevelToPlayerSize",
+    "member"
+  ],
+  [
+    "src/hls.js~hls#capleveltoplayersize",
+    "class/src/hls.js~Hls.html#instance-get-capLevelToPlayerSize",
+    "src/hls.js~Hls#capLevelToPlayerSize",
+    "member"
+  ],
+  [
     "src/hls.js~hls#config",
     "class/src/hls.js~Hls.html#instance-member-config",
     "src/hls.js~Hls#config",
@@ -4885,13 +4957,13 @@ window.esdocSearchIndex = [
   ],
   [
     "src/hls.js~hls#currentlevel",
-    "class/src/hls.js~Hls.html#instance-set-currentLevel",
+    "class/src/hls.js~Hls.html#instance-get-currentLevel",
     "src/hls.js~Hls#currentLevel",
     "member"
   ],
   [
     "src/hls.js~hls#currentlevel",
-    "class/src/hls.js~Hls.html#instance-get-currentLevel",
+    "class/src/hls.js~Hls.html#instance-set-currentLevel",
     "src/hls.js~Hls#currentLevel",
     "member"
   ],
@@ -4939,13 +5011,13 @@ window.esdocSearchIndex = [
   ],
   [
     "src/hls.js~hls#loadlevel",
-    "class/src/hls.js~Hls.html#instance-set-loadLevel",
+    "class/src/hls.js~Hls.html#instance-get-loadLevel",
     "src/hls.js~Hls#loadLevel",
     "member"
   ],
   [
     "src/hls.js~hls#loadlevel",
-    "class/src/hls.js~Hls.html#instance-get-loadLevel",
+    "class/src/hls.js~Hls.html#instance-set-loadLevel",
     "src/hls.js~Hls#loadLevel",
     "member"
   ],
@@ -4999,25 +5071,25 @@ window.esdocSearchIndex = [
   ],
   [
     "src/hls.js~hls#nextlevel",
-    "class/src/hls.js~Hls.html#instance-get-nextLevel",
-    "src/hls.js~Hls#nextLevel",
-    "member"
-  ],
-  [
-    "src/hls.js~hls#nextlevel",
     "class/src/hls.js~Hls.html#instance-set-nextLevel",
     "src/hls.js~Hls#nextLevel",
     "member"
   ],
   [
-    "src/hls.js~hls#nextloadlevel",
-    "class/src/hls.js~Hls.html#instance-get-nextLoadLevel",
-    "src/hls.js~Hls#nextLoadLevel",
+    "src/hls.js~hls#nextlevel",
+    "class/src/hls.js~Hls.html#instance-get-nextLevel",
+    "src/hls.js~Hls#nextLevel",
     "member"
   ],
   [
     "src/hls.js~hls#nextloadlevel",
     "class/src/hls.js~Hls.html#instance-set-nextLoadLevel",
+    "src/hls.js~Hls#nextLoadLevel",
+    "member"
+  ],
+  [
+    "src/hls.js~hls#nextloadlevel",
+    "class/src/hls.js~Hls.html#instance-get-nextLoadLevel",
     "src/hls.js~Hls#nextLoadLevel",
     "member"
   ],
@@ -5041,13 +5113,13 @@ window.esdocSearchIndex = [
   ],
   [
     "src/hls.js~hls#startlevel",
-    "class/src/hls.js~Hls.html#instance-set-startLevel",
+    "class/src/hls.js~Hls.html#instance-get-startLevel",
     "src/hls.js~Hls#startLevel",
     "member"
   ],
   [
     "src/hls.js~hls#startlevel",
-    "class/src/hls.js~Hls.html#instance-get-startLevel",
+    "class/src/hls.js~Hls.html#instance-set-startLevel",
     "src/hls.js~Hls#startLevel",
     "member"
   ],
@@ -5065,13 +5137,13 @@ window.esdocSearchIndex = [
   ],
   [
     "src/hls.js~hls#subtitledisplay",
-    "class/src/hls.js~Hls.html#instance-set-subtitleDisplay",
+    "class/src/hls.js~Hls.html#instance-get-subtitleDisplay",
     "src/hls.js~Hls#subtitleDisplay",
     "member"
   ],
   [
     "src/hls.js~hls#subtitledisplay",
-    "class/src/hls.js~Hls.html#instance-get-subtitleDisplay",
+    "class/src/hls.js~Hls.html#instance-set-subtitleDisplay",
     "src/hls.js~Hls#subtitleDisplay",
     "member"
   ],
@@ -5119,13 +5191,13 @@ window.esdocSearchIndex = [
   ],
   [
     "src/hls.js~hls.defaultconfig",
-    "class/src/hls.js~Hls.html#static-set-DefaultConfig",
+    "class/src/hls.js~Hls.html#static-get-DefaultConfig",
     "src/hls.js~Hls.DefaultConfig",
     "member"
   ],
   [
     "src/hls.js~hls.defaultconfig",
-    "class/src/hls.js~Hls.html#static-get-DefaultConfig",
+    "class/src/hls.js~Hls.html#static-set-DefaultConfig",
     "src/hls.js~Hls.DefaultConfig",
     "member"
   ],
@@ -5317,13 +5389,13 @@ window.esdocSearchIndex = [
   ],
   [
     "src/loader/fragment.js~fragment#url",
-    "class/src/loader/fragment.js~Fragment.html#instance-set-url",
+    "class/src/loader/fragment.js~Fragment.html#instance-get-url",
     "src/loader/fragment.js~Fragment#url",
     "member"
   ],
   [
     "src/loader/fragment.js~fragment#url",
-    "class/src/loader/fragment.js~Fragment.html#instance-get-url",
+    "class/src/loader/fragment.js~Fragment.html#instance-set-url",
     "src/loader/fragment.js~Fragment#url",
     "member"
   ],

@@ -253,27 +253,27 @@
     "filePath": "src/task-loop.js",
     "lines": [
       {
-        "lineNumber": 49,
+        "lineNumber": 50,
         "line": "  /**"
       },
       {
-        "lineNumber": 50,
+        "lineNumber": 51,
         "line": "   *"
       },
       {
-        "lineNumber": 51,
+        "lineNumber": 52,
         "line": "   * @param {Wether to force async} forceAsync"
       },
       {
-        "lineNumber": 52,
+        "lineNumber": 53,
         "line": "   * @returns {boolean} True when async, false when sync"
       },
       {
-        "lineNumber": 53,
+        "lineNumber": 54,
         "line": "   */"
       },
       {
-        "lineNumber": 54,
+        "lineNumber": 55,
         "line": "  tick() {"
       }
     ],
